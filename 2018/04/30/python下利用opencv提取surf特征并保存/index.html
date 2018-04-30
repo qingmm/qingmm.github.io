@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="python,surf特征,特征提取与保存," />
 
 
 
@@ -81,13 +81,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="马思夫的博客">
-<meta property="og:url" content="http://maself.top/index.html">
+<meta name="description" content="一、算法背景介绍Lowe于2000年提出了SIFT算法，并于2004年加以完善和改进，SIFT特征对图像旋转、平移、缩放、亮度变化能够保持良好的不变性，且其独特性好，信息量较为丰富，得到了广泛的应用，但其提取计算量较大，效率较低，因此Bay等人提出了SURF算法，在保证特征点数量的情况下，提高了效率。SURF算法首先构建Hessian矩阵，然后构建尺度空间(SIFT算法则使用DOG)，其在构建">
+<meta name="keywords" content="python,surf特征,特征提取与保存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python下利用opencv提取surf特征并保存">
+<meta property="og:url" content="http://maself.top/2018/04/30/python下利用opencv提取surf特征并保存/index.html">
 <meta property="og:site_name" content="马思夫的博客">
+<meta property="og:description" content="一、算法背景介绍Lowe于2000年提出了SIFT算法，并于2004年加以完善和改进，SIFT特征对图像旋转、平移、缩放、亮度变化能够保持良好的不变性，且其独特性好，信息量较为丰富，得到了广泛的应用，但其提取计算量较大，效率较低，因此Bay等人提出了SURF算法，在保证特征点数量的情况下，提高了效率。SURF算法首先构建Hessian矩阵，然后构建尺度空间(SIFT算法则使用DOG)，其在构建">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-30T08:19:04.141Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="马思夫的博客">
+<meta name="twitter:title" content="python下利用opencv提取surf特征并保存">
+<meta name="twitter:description" content="一、算法背景介绍Lowe于2000年提出了SIFT算法，并于2004年加以完善和改进，SIFT特征对图像旋转、平移、缩放、亮度变化能够保持良好的不变性，且其独特性好，信息量较为丰富，得到了广泛的应用，但其提取计算量较大，效率较低，因此Bay等人提出了SURF算法，在保证特征点数量的情况下，提高了效率。SURF算法首先构建Hessian矩阵，然后构建尺度空间(SIFT算法则使用DOG)，其在构建">
 
 
 
@@ -117,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://maself.top/"/>
+  <link rel="canonical" href="http://maself.top/2018/04/30/python下利用opencv提取surf特征并保存/"/>
 
 
 
 
 
-  <title>马思夫的博客</title>
+  <title>python下利用opencv提取surf特征并保存 | 马思夫的博客</title>
   
 
 
@@ -142,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,9 +250,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -278,9 +282,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/30/python下利用opencv提取surf特征并保存/" itemprop="url">python下利用opencv提取surf特征并保存</a></h2>
+          <h2 class="post-title" itemprop="name headline">python下利用opencv提取surf特征并保存</h2>
         
 
         <div class="post-meta">
@@ -352,18 +354,12 @@
       
 
       
-        
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=30352784&auto=0&height=32"></iframe>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=30352784&auto=0&height=32"></iframe>
 
-<h1 id="一、算法背景介绍"><a href="#一、算法背景介绍" class="headerlink" title="一、算法背景介绍"></a>一、算法背景介绍</h1><p>Lowe于2000年提出了SIFT算法，并于2004年加以完善和改进，SIFT特征对图像旋转、平移、缩放、亮度变化能够保持良好的不变性，且其独特性好，信息量较为丰富，得到了广泛的应用，但其提取计算量较大，效率较低，因此Bay等人提出了SURF算法，在保证特征点数量的情况下，提高了效率。<br>SURF算法首先构建Hessian矩阵，然后构建尺度空间(SIFT算法则使用DOG)，其在构建图像金字塔时原始图像大小保持不变，只改变滤波器大小，然后精确定位特征点并确定其主方向，最后生成特征点描述子。<br>此外，SURF算法得到的特征向量维度为64，而SIFT得到的是128维向量。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/30/python下利用opencv提取surf特征并保存/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<h1 id="一、算法背景介绍"><a href="#一、算法背景介绍" class="headerlink" title="一、算法背景介绍"></a>一、算法背景介绍</h1><p>Lowe于2000年提出了SIFT算法，并于2004年加以完善和改进，SIFT特征对图像旋转、平移、缩放、亮度变化能够保持良好的不变性，且其独特性好，信息量较为丰富，得到了广泛的应用，但其提取计算量较大，效率较低，因此Bay等人提出了SURF算法，在保证特征点数量的情况下，提高了效率。<br>SURF算法首先构建Hessian矩阵，然后构建尺度空间(SIFT算法则使用DOG)，其在构建图像金字塔时原始图像大小保持不变，只改变滤波器大小，然后精确定位特征点并确定其主方向，最后生成特征点描述子。<br>此外，SURF算法得到的特征向量维度为64，而SIFT得到的是128维向量。<br><a id="more"></a></p>
+<h1 id="二、实现代码"><a href="#二、实现代码" class="headerlink" title="二、实现代码"></a>二、实现代码</h1><p>下述代码计算images_folder文件夹下的所有图片的SURF特征，然后将图片与特征向量其保存到指定文件夹<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*-coding:utf-8-*-</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">path = sys.path[<span class="number">0</span>] + os.sep</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">feature_extract</span><span class="params">(images_folder, draw_folder)</span>:</span></span><br><span class="line">    featureSum = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> os.listdir(images_folder):</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'.jpg'</span> <span class="keyword">in</span> filename:</span><br><span class="line">            filepath + images_folder + filename</span><br><span class="line">            drawpath = draw_folder + filename  </span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">continue</span>  </span><br><span class="line">        img = cv2.imread(filepath)</span><br><span class="line">        filename = filepath.split(os.sep)[<span class="number">-1</span>].split(<span class="string">'.'</span>)[<span class="number">0</span>]</span><br><span class="line">        gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)</span><br><span class="line">        <span class="comment"># set Hessian threshold</span></span><br><span class="line">        detector = cv2.xfeatures2d.SURF_create(<span class="number">2000</span>)</span><br><span class="line">        <span class="comment"># find keypoints and descriptors directly</span></span><br><span class="line">        kps, des = detector.detectAndCompute(gray, <span class="keyword">None</span>)</span><br><span class="line">        img = cv2.drawKeypoints(image=img, outImage=img, keypoints=kps, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS, color=(<span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>))</span><br><span class="line">        feature_name = images_folder + <span class="string">'features%s%s.feature'</span>%(os.sep, filename)</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            np.savetxt(feature_name, des, fmt=<span class="string">'%.5e'</span>) <span class="comment"># 保存特征向量</span></span><br><span class="line">            <span class="comment"># feature = np.loadtxt(feature_folder + filename) # 加载特征向量</span></span><br><span class="line">            <span class="comment"># cv2.imwrite(drawpath, img) # 保存绘制了SURF特征的图片</span></span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        featureSum += len(kps)</span><br><span class="line">    <span class="keyword">print</span> featureSum</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    images_folder = path + <span class="string">'images'</span> + os.sep</span><br><span class="line">    draw_folder = path + <span class="string">'results'</span> + os.sep + <span class="string">'drawImages'</span> + os.sep</span><br><span class="line">    feature_extract(images_folder, draw_folder)</span><br></pre></td></tr></table></figure></p>
+<p>以上，欢迎交流～</p>
+
       
     </div>
     
@@ -378,162 +374,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://maself.top/2018/04/30/python下对hsv颜色空间进行量化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mamq">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/me.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="马思夫的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/30/python下对hsv颜色空间进行量化/" itemprop="url">python下进行hsv颜色空间量化</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-30T13:41:49+08:00">
-                2018-04-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/图像处理/" itemprop="url" rel="index">
-                    <span itemprop="name">图像处理</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/python/" rel="tag"># python</a>
           
-
+            <a href="/tags/surf特征/" rel="tag"># surf特征</a>
           
-            
+            <a href="/tags/特征提取与保存/" rel="tag"># 特征提取与保存</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=30352784&auto=0&height=32"></iframe>
-
-<p>由于工作需要，需要计算颜色直方图来提取颜色特征，但若不将颜色空间进行量化，则直方图矢量维数过高，不便于使用。但是看了<strong>opencv API</strong>后并未发现提供了相关函数能够在计算颜色直方图的同时进行量化，因此这部分功能只能自己实现。下面分为两个部分进行介绍：<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/30/python下对hsv颜色空间进行量化/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/30/python下对hsv颜色空间进行量化/" rel="next" title="python下进行hsv颜色空间量化">
+                <i class="fa fa-chevron-left"></i> python下进行hsv颜色空间量化
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -543,10 +417,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -554,6 +429,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -574,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -662,6 +550,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、算法背景介绍"><span class="nav-number">1.</span> <span class="nav-text">一、算法背景介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、实现代码"><span class="nav-number">2.</span> <span class="nav-text">二、实现代码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -802,6 +706,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
