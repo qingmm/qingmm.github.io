@@ -509,7 +509,7 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 810px;
+  width: 700px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -521,7 +521,7 @@ body {
 }
 .main-inner {
   margin: 0 auto;
-  width: 810px;
+  width: 700px;
 }
 @media (min-width: 1600px) {
   .container .main-inner {
@@ -538,7 +538,7 @@ body {
 .footer-inner {
   box-sizing: border-box;
   margin: 20px auto;
-  width: 810px;
+  width: 700px;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
@@ -1293,6 +1293,10 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
+.post-body a {
+  color: #428bca;
+  font-weight: bold;
+}
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -1344,7 +1348,7 @@ pre .javascript .function {
 .posts-expand {
   padding-top: 40px;
 }
-@media (max-width: 1080px) {
+@media (max-width: 767px) {
   .posts-expand {
     margin: 0 20px;
   }
@@ -1897,7 +1901,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1aff2e;
+  background: #6be0db;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2696,7 +2700,7 @@ pre .javascript .function {
 .header {
   position: relative;
   margin: 0 auto;
-  width: 960px;
+  width: 760px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
@@ -2756,7 +2760,7 @@ pre .javascript .function {
   }
 }
 .container .main-inner {
-  width: 960px;
+  width: 760px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .main-inner {
@@ -2772,7 +2776,7 @@ pre .javascript .function {
   float: right;
   box-sizing: border-box;
   padding: 40px;
-  width: 810px;
+  width: 700px;
   background: #fff;
   min-height: 700px;
   box-shadow: initial;
@@ -2797,7 +2801,7 @@ pre .javascript .function {
   position: static;
   float: left;
   margin-top: 300px;
-  width: 200px;
+  width: 240px;
   background: #f5f7f9;
   box-shadow: none;
 }
@@ -2815,7 +2819,7 @@ pre .javascript .function {
   display: none;
 }
 .footer-inner {
-  width: 960px;
+  width: 760px;
   padding-left: 260px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3087,4 +3091,23 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.container .main-inner {
+  width: 90%;
+}
+.content-wrap {
+  width: calc(100% - 260px);
+}
+.header-inner {
+  margin-left: 50px;
+}
+.main {
+  padding-bottom: 50px;
 }

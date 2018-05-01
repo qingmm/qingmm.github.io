@@ -153,7 +153,10 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="default">
-
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+    </script>
+  
   
   
     
@@ -490,16 +493,29 @@
     
 
     
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">
+            -------------本文结束
+            <i class="fa fa-paw"></i>
+            感谢您的阅读-------------
+        </div>
+    
+</div>
 
+      
+    </div>
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag"># python</a>
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
           
-            <a href="/tags/hsv量化/" rel="tag"># hsv量化</a>
+            <a href="/tags/hsv量化/" rel="tag"><i class="fa fa-tag"></i> hsv量化</a>
           
-            <a href="/tags/颜色空间/" rel="tag"># 颜色空间</a>
+            <a href="/tags/颜色空间/" rel="tag"><i class="fa fa-tag"></i> 颜色空间</a>
           
         </div>
       
@@ -707,7 +723,8 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -724,15 +741,21 @@
     <span title="Site words total count">1.1k</span>
   
 </div>
+<div class="powered-by">
+  <i class="fa fa-user-md"></i>
+  <span id="busuanzi_container_site_uv">
+    本站访客数:<span id="busuanzi_value_site_uv"></span>
+    本站总访问量:<span id="busuanzi_value_site_pv"></span>
+  </span>
+</div>
 
 
 
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
-
+  <div class="footer-custom">Stay hungry, stay foolish.</div>
 
 
         
@@ -772,6 +795,8 @@
   
 
 
+  
+
 
 
 
@@ -810,6 +835,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -891,7 +921,7 @@
         notify: true,
         appId: '0TOzQQceB2pdbrHL79xC2Yjo-gzGzoHsz',
         appKey: 'tg1mWd1k4AL6gJ8KzXp6Uz5l',
-        placeholder: '欢迎留言交流',
+        placeholder: '欢迎留言交流(支持MarkDown语法)',
         avatar:'wavatar',
         guest_info:guest,
         pageSize:'10' || 10,
@@ -1269,4 +1299,6 @@
 
 
 </body>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
 </html>
