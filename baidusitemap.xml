@@ -3,10 +3,118 @@
 
 
     
+  <url>
+    <loc>http://maself.top/2018/python%E4%B8%8B%E8%BF%9B%E8%A1%8Clda%E4%B8%BB%E9%A2%98%E6%8C%96%E6%8E%98-%E4%BA%8C-%E2%80%94%E2%80%94%E5%88%A9%E7%94%A8gensim%E8%AE%AD%E7%BB%83LDA%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2018-05-01T12:31:33.395Z</lastmod>
+    <data>
+        <display>
+        <title>python下进行lda主题挖掘(二)——利用gensim训练LDA模型</title>
+        <pubTime>2018-05-01T12:10:39.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>lda</tag>
+         
+        <tag>自然语言处理</tag>
+         
+        <tag>主题挖掘</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
+          
+             
+              <breadCrumb title="NLP" url="http://maself.top/categories/python/NLP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://maself.top/2018/python%E4%B8%8B%E8%BF%9B%E8%A1%8Clda%E4%B8%BB%E9%A2%98%E6%8C%96%E6%8E%98-%E4%B8%89-%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E5%9B%B0%E6%83%91%E5%BA%A6perplexity/</loc>
+    <lastmod>2018-05-01T12:31:25.047Z</lastmod>
+    <data>
+        <display>
+        <title>python下进行lda主题挖掘(三)——计算困惑度perplexity</title>
+        <pubTime>2018-05-01T12:11:28.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>lda</tag>
+         
+        <tag>自然语言处理</tag>
+         
+        <tag>perplexity</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
+          
+             
+              <breadCrumb title="NLP" url="http://maself.top/categories/python/NLP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://maself.top/2018/python%E4%B8%8B%E8%BF%9B%E8%A1%8Clda%E4%B8%BB%E9%A2%98%E6%8C%96%E6%8E%98-%E4%B8%80-%E2%80%94%E2%80%94%E9%A2%84%E5%A4%84%E7%90%86-%E8%8B%B1%E6%96%87/</loc>
+    <lastmod>2018-05-01T12:31:13.855Z</lastmod>
+    <data>
+        <display>
+        <title>python下进行lda主题挖掘(一)——预处理(英文)</title>
+        <pubTime>2018-05-01T12:08:10.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>lda</tag>
+         
+        <tag>自然语言处理</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
+          
+             
+              <breadCrumb title="NLP" url="http://maself.top/categories/python/NLP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://maself.top/2018/%E5%88%A9%E7%94%A8python%E5%B0%86json%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%B8%BAcsv%E6%A0%BC%E5%BC%8F/</loc>
+    <lastmod>2018-05-01T12:18:10.463Z</lastmod>
+    <data>
+        <display>
+        <title>利用python将json数据转换为csv格式</title>
+        <pubTime>2018-05-01T12:05:54.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>json</tag>
+         
+        <tag>csv</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://maself.top/2018/python%E4%B8%8B%E5%AF%B9hsv%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E8%BF%9B%E8%A1%8C%E9%87%8F%E5%8C%96/</loc>
-    <lastmod>2018-05-01T08:53:48.895Z</lastmod>
+    <lastmod>2018-05-01T12:06:40.435Z</lastmod>
     <data>
         <display>
         <title>python下进行hsv颜色空间量化</title>
@@ -21,10 +129,10 @@
          
            
              
-              <breadCrumb title="图像处理" url="http://maself.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
           
              
-              <breadCrumb title="python" url="http://maself.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/python/"/>
+              <breadCrumb title="图像处理" url="http://maself.top/categories/python/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
           
         </display>
     </data>
@@ -33,7 +141,7 @@
     
   <url>
     <loc>http://maself.top/2018/python%E4%B8%8B%E5%88%A9%E7%94%A8opencv%E6%8F%90%E5%8F%96surf%E7%89%B9%E5%BE%81%E5%B9%B6%E4%BF%9D%E5%AD%98/</loc>
-    <lastmod>2018-05-01T06:57:58.839Z</lastmod>
+    <lastmod>2018-05-01T12:06:39.235Z</lastmod>
     <data>
         <display>
         <title>python下利用opencv提取surf特征并保存</title>
@@ -48,15 +156,20 @@
          
            
              
-              <breadCrumb title="图像处理" url="http://maself.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
           
              
-              <breadCrumb title="python" url="http://maself.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/python/"/>
+              <breadCrumb title="图像处理" url="http://maself.top/categories/python/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
           
         </display>
     </data>
     </url>
 
+    
+    
+    
+    
+    
     
     
     
