@@ -1720,6 +1720,42 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+.post-widgets {
+  border-top: 1px solid #eee;
+  padding-top: 9px;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.post-widgets .post-meta-divider {
+  height: 28px;
+  color: #999;
+}
+.wp_rating {
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 20px;
+  padding-top: 6px;
+}
+.social-like {
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.vk_like {
+  width: 85px;
+  height: 21px;
+  padding-top: 7px;
+  align-self: center;
+}
+.fb_like {
+  height: 30px;
+  align-self: center;
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -1901,7 +1937,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #04ffd2;
+  background: #0b47ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2700,7 +2736,7 @@ pre .javascript .function {
 .header {
   position: relative;
   margin: 0 auto;
-  width: 1335px;
+  width: 960px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
@@ -2760,7 +2796,7 @@ pre .javascript .function {
   }
 }
 .container .main-inner {
-  width: 1335px;
+  width: 960px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .main-inner {
@@ -2801,7 +2837,7 @@ pre .javascript .function {
   position: static;
   float: left;
   margin-top: 300px;
-  width: 200px;
+  width: 240px;
   background: #f5f7f9;
   box-shadow: none;
 }
@@ -2819,7 +2855,7 @@ pre .javascript .function {
   display: none;
 }
 .footer-inner {
-  width: 1335px;
+  width: 960px;
   padding-left: 260px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3107,7 +3143,4 @@ pre .javascript .function {
 }
 .header-inner {
   margin-left: 50px;
-}
-.main {
-  padding-bottom: 50px;
 }
