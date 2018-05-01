@@ -442,7 +442,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,268
+                  1,255
                 </span>
               
 
@@ -484,7 +484,8 @@
 <hr>
 <p>本篇是我的LDA主题挖掘系列的第三篇，专门来介绍如何对训练好的LDA模型进行评价。</p>
 <blockquote>
-<p>训练好好LDA主题模型后，如何评价模型的好坏？能否直接将训练好的模型拿去应用？这是一个比较重要的问题，在对模型精度要求比较高的项目或科研中，需要对模型进行评价。一般来说，LDA模型的主题数量都是需要需要根据具体任务进行调整的，即要评价不同主题数的模型的困惑度来选择最优的那个模型。<br>
+<p>训练好好LDA主题模型后，如何评价模型的好坏？能否直接将训练好的模型拿去应用？这是一个比较重要的问题，在对模型精度要求比较高的项目或科研中，需要对模型进行评价。一般来说，LDA模型的主题数量都是需要需要根据具体任务进行调整的，即要评价不同主题数的模型的困惑度来选择最优的那个模型。</p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/python下进行lda主题挖掘-三-——计算困惑度perplexity/" rel="contents">
@@ -657,7 +658,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,263
+                  1,255
                 </span>
               
 
@@ -910,7 +911,7 @@
         
           <p><a href="http://maself.top/2018/python下进行lda主题挖掘-一-——预处理-英文/">python下进行lda主题挖掘(一)——预处理(英文)</a><br><a href="http://maself.top/2018/python下进行lda主题挖掘-二-——利用gensim训练LDA模型/">python下进行lda主题挖掘(二)——利用gensim训练LDA模型</a><br><a href="http://maself.top/2018/python下进行lda主题挖掘-三-——计算困惑度perplexity/">python下进行lda主题挖掘(三)——计算困惑度perplexity</a></p>
 <hr>
-<p>##写在前面<br>本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。<br>运行环境：python27，windows-Linux皆可<br>代码如有纰漏或不完善之处，欢迎批评指正。<br>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。<br>运行环境：python27，windows-Linux皆可<br>代码如有纰漏或不完善之处，欢迎批评指正。<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/python下进行lda主题挖掘-一-——预处理-英文/" rel="contents">
@@ -1111,7 +1112,7 @@
       
         
           <p>假设.json文件中存储的数据为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;type&quot;: &quot;Point&quot;, &quot;link&quot;: &quot;http://www.dianping.com/newhotel/22416995&quot;, &quot;coordinates&quot;: [116.37256372996957, 40.39798447055443], &quot;category&quot;: &quot;经济型&quot;, &quot;name&quot;: &quot;北京荷塘山庄&quot;, &quot;count&quot;: &quot;278&quot;, &quot;address&quot;: &quot;北京市怀柔区黄花城村安四路&quot;, &quot;price&quot;: &quot;380&quot;&#125;</span><br><span class="line">&#123;&quot;type&quot;: &quot;Point&quot;, &quot;link&quot;: &quot;http://www.dianping.com/newhotel/19717653&quot;, &quot;coordinates&quot;: [116.56881588256466, 40.43310967948417], &quot;category&quot;: &quot;经济型&quot;, &quot;name&quot;: &quot;慕田峪长城鱼师傅乡村酒店&quot;, &quot;count&quot;: &quot;89&quot;, &quot;address&quot;: &quot;北京市怀柔区渤海镇苇店村(慕田峪长城下3公里处，近怀黄路)&quot;, &quot;price&quot;: &quot;258&quot;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">"type"</span>: <span class="string">"Point"</span>, <span class="string">"link"</span>: <span class="string">"http://www.dianping.com/newhotel/22416995"</span>, <span class="string">"coordinates"</span>: [<span class="number">116.37256372996957</span>, <span class="number">40.39798447055443</span>], <span class="string">"category"</span>: <span class="string">"经济型"</span>, <span class="string">"name"</span>: <span class="string">"北京荷塘山庄"</span>, <span class="string">"count"</span>: <span class="string">"278"</span>, <span class="string">"address"</span>: <span class="string">"北京市怀柔区黄花城村安四路"</span>, <span class="string">"price"</span>: <span class="string">"380"</span>&#125;</span><br><span class="line">&#123;<span class="string">"type"</span>: <span class="string">"Point"</span>, <span class="string">"link"</span>: <span class="string">"http://www.dianping.com/newhotel/19717653"</span>, <span class="string">"coordinates"</span>: [<span class="number">116.56881588256466</span>, <span class="number">40.43310967948417</span>], <span class="string">"category"</span>: <span class="string">"经济型"</span>, <span class="string">"name"</span>: <span class="string">"慕田峪长城鱼师傅乡村酒店"</span>, <span class="string">"count"</span>: <span class="string">"89"</span>, <span class="string">"address"</span>: <span class="string">"北京市怀柔区渤海镇苇店村(慕田峪长城下3公里处，近怀黄路)"</span>, <span class="string">"price"</span>: <span class="string">"258"</span>&#125;</span><br></pre></td></tr></table></figure>
 <p>现在需要将上面的这些数据存为csv格式，其中字典的keys为csv中的属性名称，字典的values为csv中属性对应的值。<br>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1979,7 +1980,7 @@
     
       <span class="post-meta-item-text">网站总字数&#58;</span>
     
-    <span title="网站总字数">5.7k</span>
+    <span title="网站总字数">5.6k</span>
   
 </div>
 
@@ -2635,6 +2636,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
