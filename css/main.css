@@ -517,7 +517,7 @@ body {
   }
 }
 .main {
-  padding-bottom: 100px;
+  padding-bottom: 110px;
 }
 .main-inner {
   margin: 0 auto;
@@ -1901,7 +1901,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8e1d;
+  background: #e2ff7e;
 }
 .links-of-blogroll {
   font-size: 13px;
