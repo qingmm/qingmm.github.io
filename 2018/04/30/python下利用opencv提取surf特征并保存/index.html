@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="马思夫的博客">
 <meta property="og:description" content="一、算法背景介绍Lowe于2000年提出了SIFT算法，并于2004年加以完善和改进，SIFT特征对图像旋转、平移、缩放、亮度变化能够保持良好的不变性，且其独特性好，信息量较为丰富，得到了广泛的应用，但其提取计算量较大，效率较低，因此Bay等人提出了SURF算法，在保证特征点数量的情况下，提高了效率。SURF算法首先构建Hessian矩阵，然后构建尺度空间(SIFT算法则使用DOG)，其在构建">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-30T14:02:27.096Z">
+<meta property="og:updated_time" content="2018-04-30T14:13:30.936Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python下利用opencv提取surf特征并保存">
 <meta name="twitter:description" content="一、算法背景介绍Lowe于2000年提出了SIFT算法，并于2004年加以完善和改进，SIFT特征对图像旋转、平移、缩放、亮度变化能够保持良好的不变性，且其独特性好，信息量较为丰富，得到了广泛的应用，但其提取计算量较大，效率较低，因此Bay等人提出了SURF算法，在保证特征点数量的情况下，提高了效率。SURF算法首先构建Hessian矩阵，然后构建尺度空间(SIFT算法则使用DOG)，其在构建">
@@ -193,42 +193,72 @@
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
+        <li class="menu-item menu-item-主页">
           <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            主页
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
+        <li class="menu-item menu-item-标签">
           <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Tags
+            标签
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-categories">
+        <li class="menu-item menu-item-分类">
           <a href="/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Categories
+            分类
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-存档">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            存档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-随笔">
+          <a href="/categories/随笔/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-pencil"></i> <br />
+            
+            随笔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-python">
+          <a href="/categories/python/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-keyboard-o"></i> <br />
+            
+            python
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-关于">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -358,6 +388,17 @@
 
                 
                 
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/图像处理/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -370,7 +411,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/04/30/python下利用opencv提取surf特征并保存/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/30/python下利用opencv提取surf特征并保存/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/30/python下利用opencv提取surf特征并保存/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -507,11 +548,7 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
     </div>
-
   
 
 
@@ -562,7 +599,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
@@ -575,7 +612,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 
               </div>
@@ -686,11 +723,7 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
-
-
-  <span class="post-meta-divider">|</span>
 
 
 
@@ -837,45 +870,30 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: '18714728',
-            repo: 'qingmm.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'c7678ff2d26a67048862ea3cc6b591d35eb3ff63',
-            
-                client_id: '2835f1be5d61deceeb40'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
 
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '0TOzQQceB2pdbrHL79xC2Yjo-gzGzoHsz',
+        appKey: 'tg1mWd1k4AL6gJ8KzXp6Uz5l',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1207,8 +1225,36 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+  </script>
+
   
 
   
