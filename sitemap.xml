@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://maself.top/py-hsv-quantilize/</loc>
+    
+    <lastmod>2018-05-02T14:14:24.637Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://maself.top/py-lda-train/</loc>
     
     <lastmod>2018-05-02T12:36:39.829Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://maself.top/py-json2csv/</loc>
     
     <lastmod>2018-05-02T08:43:20.545Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/py-hsv-quantilize/</loc>
-    
-    <lastmod>2018-05-02T08:41:24.265Z</lastmod>
     
   </url>
   

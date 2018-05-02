@@ -24,6 +24,10 @@
 
 
 
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
 
 
 
@@ -94,12 +98,12 @@
 <meta property="og:site_name" content="马思夫的博客">
 <meta property="og:description" content="由于工作需要，需要计算颜色直方图来提取颜色特征，但若不将颜色空间进行量化，则直方图矢量维数过高，不便于使用。但是看了opencv API后并未发现提供了相关函数能够在计算颜色直方图的同时进行量化，因此这部分功能只能自己实现。下面分为两个部分进行介绍：">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://img-blog.csdn.net/20180428195709157?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzOTI2NTc1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-05-02T08:41:24.265Z">
+<meta property="og:image" content="http://p81hctxgb.bkt.clouddn.com/hsv.png">
+<meta property="og:updated_time" content="2018-05-02T14:14:24.637Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python下进行hsv颜色空间量化">
 <meta name="twitter:description" content="由于工作需要，需要计算颜色直方图来提取颜色特征，但若不将颜色空间进行量化，则直方图矢量维数过高，不便于使用。但是看了opencv API后并未发现提供了相关函数能够在计算颜色直方图的同时进行量化，因此这部分功能只能自己实现。下面分为两个部分进行介绍：">
-<meta name="twitter:image" content="https://img-blog.csdn.net/20180428195709157?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzOTI2NTc1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta name="twitter:image" content="http://p81hctxgb.bkt.clouddn.com/hsv.png">
 
 
 
@@ -109,7 +113,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -439,17 +443,6 @@
 
           
           
-             <span id="/py-hsv-quantilize/" class="leancloud_visitors" data-flag-title="python下进行hsv颜色空间量化">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读量&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
             <span class="post-meta-divider">|</span>
@@ -500,14 +493,14 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
         <p>由于工作需要，需要计算颜色直方图来提取颜色特征，但若不将颜色空间进行量化，则直方图矢量维数过高，不便于使用。但是看了<strong>opencv API</strong>后并未发现提供了相关函数能够在计算颜色直方图的同时进行量化，因此这部分功能只能自己实现。下面分为两个部分进行介绍：<br><a id="more"></a></p>
-<h2 id="一、颜色空间量化表"><a href="#一、颜色空间量化表" class="headerlink" title="一、颜色空间量化表"></a>一、颜色空间量化表</h2><p>由于RGB模型不够直观，不符合人类视觉习惯，因此在进行颜色特征提取前，需要将照片从RGB颜色模型转换为更符合人类视觉的HSV模型。在提取颜色特征时，最常用的方法之一为颜色直方图法，但一张图片中出现的颜色一般特别多，导致直方图矢量的维数较高，因此需要对HSV空间进行量化。根据人眼对颜色的感知特性，采用较为常用的量化方法，即按照如下对应关系进行量化：<br><img src="https://img-blog.csdn.net/20180428195709157?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzOTI2NTc1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="HSV量化对照表"><br>基于上述量化表，将各颜色分量按照下述公式合成为72维一维矢量： $G = 9H + 3S + V$</p>
+<h2 id="一、颜色空间量化表"><a href="#一、颜色空间量化表" class="headerlink" title="一、颜色空间量化表"></a>一、颜色空间量化表</h2><p>由于RGB模型不够直观，不符合人类视觉习惯，因此在进行颜色特征提取前，需要将照片从RGB颜色模型转换为更符合人类视觉的HSV模型。在提取颜色特征时，最常用的方法之一为颜色直方图法，但一张图片中出现的颜色一般特别多，导致直方图矢量的维数较高，因此需要对HSV空间进行量化。根据人眼对颜色的感知特性，采用较为常用的量化方法，即按照如下对应关系进行量化：<br><img src="http://p81hctxgb.bkt.clouddn.com/hsv.png" alt="HSV量化对照表"><br>基于上述量化表，将各颜色分量按照下述公式合成为72维一维矢量： $G = 9H + 3S + V$</p>
 <h2 id="二、量化代码"><a href="#二、量化代码" class="headerlink" title="二、量化代码"></a>二、量化代码</h2><p>代码使用纯python写成，效率偏低，处理388*500像素的照片用时1.45秒。在quantilize函数中，未使用if-else判断语句，因此至少节省了1/3的时间。但这个速度显然是无法令人满意的，用C++效率应该会更高点。如果有人有更好的想法，欢迎在下方评论交流。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*-coding:utf-8-*-</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">colors</span><span class="params">(imagepath)</span>:</span></span><br><span class="line">    img = cv2.imread(imagepath)</span><br><span class="line">    hsv = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)</span><br><span class="line">    nhsv = np.zeros(hsv.shape[:<span class="number">2</span>], dtype=np.uint8)</span><br><span class="line">    t2 = datetime.now()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(hsv.shape[<span class="number">0</span>]):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(hsv.shape[<span class="number">1</span>]):</span><br><span class="line">            nhsv[i][j] = quantilize(hsv[i][j])</span><br><span class="line">    <span class="keyword">print</span> datetime.now() - t2</span><br><span class="line">    hist = cv2.calcHist([nhsv], [<span class="number">0</span>], <span class="keyword">None</span>, [<span class="number">72</span>], [<span class="number">0</span>,<span class="number">72</span>]) <span class="comment"># 40x faster than np.histogramfaster than np.histogram</span></span><br><span class="line">    plt.plot(hist,color = <span class="string">'r'</span>)</span><br><span class="line">    plt.xlim([<span class="number">0</span>, <span class="number">72</span>])</span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quantilize</span><span class="params">(value)</span>:</span></span><br><span class="line">    <span class="string">'''hsv直方图量化</span></span><br><span class="line"><span class="string">    value : [21, 144, 23] h, s, v</span></span><br><span class="line"><span class="string">    opencv中，h-[0,180], s-[0,255], v-[0,255]</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment"># </span></span><br><span class="line">    value[<span class="number">0</span>] = value[<span class="number">0</span>] * <span class="number">2</span></span><br><span class="line">    hlist = [<span class="number">20</span>, <span class="number">40</span>, <span class="number">75</span>, <span class="number">155</span>, <span class="number">190</span>, <span class="number">270</span>, <span class="number">290</span>, <span class="number">316</span>, <span class="number">360</span>]</span><br><span class="line">    svlist = [<span class="number">21</span>, <span class="number">178</span>, <span class="number">255</span>]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(hlist)):</span><br><span class="line">        <span class="keyword">if</span> value[<span class="number">0</span>] &lt;= hlist[i]:</span><br><span class="line">            h = i % <span class="number">8</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(svlist)):</span><br><span class="line">        <span class="keyword">if</span> value[<span class="number">1</span>] &lt;= svlist[i]:</span><br><span class="line">            s = i</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(svlist)):</span><br><span class="line">        <span class="keyword">if</span> value[<span class="number">2</span>] &lt;= svlist[i]:</span><br><span class="line">            v = i</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">9</span> * h + <span class="number">3</span> * s + v</span><br></pre></td></tr></table></figure></p>
 <p>以上，欢迎批评交流～<br>如果觉得不错，欢迎点赞～</p>
 
@@ -583,6 +576,33 @@
 
 
     <div class="post-spread">
+      
+        
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "1",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      },
+      "slide": {
+        "bdImg": "5",
+        "bdPos": "left",
+        "bdTop": "100"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
       
     </div>
   </div>
@@ -990,6 +1010,8 @@
         <div class="back-to-top">
           <i class="fa fa-arrow-up"></i>
           
+            <span id="scrollpercent"><span>0</span>%</span>
+          
         </div>
       
 
@@ -1029,6 +1051,7 @@
 
   <div class="footer-custom">Stay hungry, stay foolish.</div>
 
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273586156'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1273586156%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
 
         
 <div class="busuanzi-count">
@@ -1237,7 +1260,7 @@
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
+    var guest = 'nick,mail';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
@@ -1582,113 +1605,6 @@
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("0TOzQQceB2pdbrHL79xC2Yjo-gzGzoHsz", "tg1mWd1k4AL6gJ8KzXp6Uz5l");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
 
   
 <script>
@@ -1735,6 +1651,9 @@
 
 
   
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
 
   
   <script type="text/javascript" src="/js/src/exturl.js?v=5.1.4"></script>

@@ -4,6 +4,33 @@
 
     
   <url>
+    <loc>http://maself.top/py-hsv-quantilize/</loc>
+    <lastmod>2018-05-02T14:14:24.637Z</lastmod>
+    <data>
+        <display>
+        <title>python下进行hsv颜色空间量化</title>
+        <pubTime>2018-04-30T05:41:49.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>hsv量化</tag>
+         
+        <tag>颜色空间</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
+          
+             
+              <breadCrumb title="图像处理" url="http://maself.top/categories/python/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://maself.top/py-lda-train/</loc>
     <lastmod>2018-05-02T12:36:39.829Z</lastmod>
     <data>
@@ -106,33 +133,6 @@
            
              
               <breadCrumb title="python" url="http://maself.top/categories/python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://maself.top/py-hsv-quantilize/</loc>
-    <lastmod>2018-05-02T08:41:24.265Z</lastmod>
-    <data>
-        <display>
-        <title>python下进行hsv颜色空间量化</title>
-        <pubTime>2018-04-30T05:41:49.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>hsv量化</tag>
-         
-        <tag>颜色空间</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
-          
-             
-              <breadCrumb title="图像处理" url="http://maself.top/categories/python/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
           
         </display>
     </data>
