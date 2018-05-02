@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="python下进行lda主题挖掘(一)——预处理(英文)python下进行lda主题挖掘(二)——利用gensim训练LDA模型 python下进行lda主题挖掘(三)——计算困惑度perplexity写在前面本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。运行环境：python27，">
+<meta name="description" content="python下进行lda主题挖掘(一)——预处理(英文)python下进行lda主题挖掘(二)——利用gensim训练LDA模型python下进行lda主题挖掘(三)——计算困惑度perplexity  写在前面本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。运行环境：python27">
 <meta name="keywords" content="python,lda,自然语言处理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python下进行lda主题挖掘(一)——预处理(英文)">
 <meta property="og:url" content="http://maself.top/py-lda-preprocess/index.html">
 <meta property="og:site_name" content="马思夫的博客">
-<meta property="og:description" content="python下进行lda主题挖掘(一)——预处理(英文)python下进行lda主题挖掘(二)——利用gensim训练LDA模型 python下进行lda主题挖掘(三)——计算困惑度perplexity写在前面本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。运行环境：python27，">
+<meta property="og:description" content="python下进行lda主题挖掘(一)——预处理(英文)python下进行lda主题挖掘(二)——利用gensim训练LDA模型python下进行lda主题挖掘(三)——计算困惑度perplexity  写在前面本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。运行环境：python27">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-02T12:17:13.169Z">
+<meta property="og:updated_time" content="2018-05-02T12:36:38.265Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python下进行lda主题挖掘(一)——预处理(英文)">
-<meta name="twitter:description" content="python下进行lda主题挖掘(一)——预处理(英文)python下进行lda主题挖掘(二)——利用gensim训练LDA模型 python下进行lda主题挖掘(三)——计算困惑度perplexity写在前面本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。运行环境：python27，">
+<meta name="twitter:description" content="python下进行lda主题挖掘(一)——预处理(英文)python下进行lda主题挖掘(二)——利用gensim训练LDA模型python下进行lda主题挖掘(三)——计算困惑度perplexity  写在前面本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。运行环境：python27">
 
 
 
@@ -497,8 +497,9 @@
       
 
       
-        <p><a href="http://maself.top/py-lda-preprocess/">python下进行lda主题挖掘(一)——预处理(英文)</a><br><a href="http://maself.top/py-lda-train/">python下进行lda主题挖掘(二)——利用gensim训练LDA模型</a></p>
-<h2 id="python下进行lda主题挖掘-三-——计算困惑度perplexity"><a href="#python下进行lda主题挖掘-三-——计算困惑度perplexity" class="headerlink" title="python下进行lda主题挖掘(三)——计算困惑度perplexity"></a><a href="http://maself.top/py-lda-perplexity/">python下进行lda主题挖掘(三)——计算困惑度perplexity</a></h2><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。<br>运行环境：python27，windows-Linux皆可<br>代码如有纰漏或不完善之处，欢迎批评指正。<br><a id="more"></a></p>
+        <p><a href="http://maself.top/py-lda-preprocess/">python下进行lda主题挖掘(一)——预处理(英文)</a><br><a href="http://maself.top/py-lda-train/">python下进行lda主题挖掘(二)——利用gensim训练LDA模型</a><br><a href="http://maself.top/py-lda-perplexity/">python下进行lda主题挖掘(三)——计算困惑度perplexity</a></p>
+<hr>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本人打算将LDA这部分的内容写成一个系列，不涉及算法思想，只分享代码与使用经验，包括但不限于以下内容：英文文档的预处理、LDA主题提取、perplexity计算。<br>运行环境：python27，windows-Linux皆可<br>代码如有纰漏或不完善之处，欢迎批评指正。<br><a id="more"></a></p>
 <h2 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a>预处理</h2><p>英文文档的预处理主要包括以下几部分的内容：</p>
 <ul>
 <li>单词分割(英文比较简单，中文就得借助于结巴分词之类的包了)</li>
@@ -988,7 +989,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#python下进行lda主题挖掘-三-——计算困惑度perplexity"><span class="nav-text">python下进行lda主题挖掘(三)——计算困惑度perplexity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预处理"><span class="nav-text">预处理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预处理"><span class="nav-text">预处理</span></a></li></ol></div>
             
 
           </div>

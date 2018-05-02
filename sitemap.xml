@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://maself.top/py-lda-train/</loc>
+    
+    <lastmod>2018-05-02T12:36:39.829Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://maself.top/py-lda-preprocess/</loc>
     
-    <lastmod>2018-05-02T12:17:13.169Z</lastmod>
+    <lastmod>2018-05-02T12:36:38.265Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://maself.top/py-lda-perplexity/</loc>
     
-    <lastmod>2018-05-02T12:17:00.793Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/py-lda-train/</loc>
-    
-    <lastmod>2018-05-02T12:16:15.097Z</lastmod>
+    <lastmod>2018-05-02T12:36:35.361Z</lastmod>
     
   </url>
   

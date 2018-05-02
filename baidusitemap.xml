@@ -4,8 +4,37 @@
 
     
   <url>
+    <loc>http://maself.top/py-lda-train/</loc>
+    <lastmod>2018-05-02T12:36:39.829Z</lastmod>
+    <data>
+        <display>
+        <title>python下进行lda主题挖掘(二)——利用gensim训练LDA模型</title>
+        <pubTime>2018-05-01T12:10:39.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>lda</tag>
+         
+        <tag>自然语言处理</tag>
+         
+        <tag>主题挖掘</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
+          
+             
+              <breadCrumb title="NLP" url="http://maself.top/categories/python/NLP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://maself.top/py-lda-preprocess/</loc>
-    <lastmod>2018-05-02T12:17:13.169Z</lastmod>
+    <lastmod>2018-05-02T12:36:38.265Z</lastmod>
     <data>
         <display>
         <title>python下进行lda主题挖掘(一)——预处理(英文)</title>
@@ -32,7 +61,7 @@
     
   <url>
     <loc>http://maself.top/py-lda-perplexity/</loc>
-    <lastmod>2018-05-02T12:17:00.793Z</lastmod>
+    <lastmod>2018-05-02T12:36:35.361Z</lastmod>
     <data>
         <display>
         <title>python下进行lda主题挖掘(三)——计算困惑度perplexity</title>
@@ -45,35 +74,6 @@
         <tag>自然语言处理</tag>
          
         <tag>perplexity</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
-          
-             
-              <breadCrumb title="NLP" url="http://maself.top/categories/python/NLP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://maself.top/py-lda-train/</loc>
-    <lastmod>2018-05-02T12:16:15.097Z</lastmod>
-    <data>
-        <display>
-        <title>python下进行lda主题挖掘(二)——利用gensim训练LDA模型</title>
-        <pubTime>2018-05-01T12:10:39.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>lda</tag>
-         
-        <tag>自然语言处理</tag>
-         
-        <tag>主题挖掘</tag>
          
          
            
