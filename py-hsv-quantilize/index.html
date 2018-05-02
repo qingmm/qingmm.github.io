@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="python,json,csv," />
+  <meta name="keywords" content="python,hsv量化,颜色空间," />
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="假设.json文件中存储的数据为： 12&amp;#123;&quot;type&quot;: &quot;Point&quot;, &quot;link&quot;: &quot;http://www.dianping.com/newhotel/22416995&quot;, &quot;coordinates&quot;: [116.37256372996957, 40.39798447055443], &quot;category&quot;: &quot;经济型&quot;, &quot;name&quot;: &quot;北京荷塘山庄&quot;, &quot;count&quot;: &quot;2">
-<meta name="keywords" content="python,json,csv">
+<meta name="description" content="由于工作需要，需要计算颜色直方图来提取颜色特征，但若不将颜色空间进行量化，则直方图矢量维数过高，不便于使用。但是看了opencv API后并未发现提供了相关函数能够在计算颜色直方图的同时进行量化，因此这部分功能只能自己实现。下面分为两个部分进行介绍：">
+<meta name="keywords" content="python,hsv量化,颜色空间">
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用python将json数据转换为csv格式">
-<meta property="og:url" content="http://maself.top/2018/利用python将json数据转换为csv格式/index.html">
+<meta property="og:title" content="python下进行hsv颜色空间量化">
+<meta property="og:url" content="http://maself.top/py-hsv-quantilize/index.html">
 <meta property="og:site_name" content="马思夫的博客">
-<meta property="og:description" content="假设.json文件中存储的数据为： 12&amp;#123;&quot;type&quot;: &quot;Point&quot;, &quot;link&quot;: &quot;http://www.dianping.com/newhotel/22416995&quot;, &quot;coordinates&quot;: [116.37256372996957, 40.39798447055443], &quot;category&quot;: &quot;经济型&quot;, &quot;name&quot;: &quot;北京荷塘山庄&quot;, &quot;count&quot;: &quot;2">
+<meta property="og:description" content="由于工作需要，需要计算颜色直方图来提取颜色特征，但若不将颜色空间进行量化，则直方图矢量维数过高，不便于使用。但是看了opencv API后并未发现提供了相关函数能够在计算颜色直方图的同时进行量化，因此这部分功能只能自己实现。下面分为两个部分进行介绍：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-01T12:50:00.851Z">
+<meta property="og:image" content="https://img-blog.csdn.net/20180428195709157?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzOTI2NTc1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:updated_time" content="2018-05-02T08:41:24.265Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用python将json数据转换为csv格式">
-<meta name="twitter:description" content="假设.json文件中存储的数据为： 12&amp;#123;&quot;type&quot;: &quot;Point&quot;, &quot;link&quot;: &quot;http://www.dianping.com/newhotel/22416995&quot;, &quot;coordinates&quot;: [116.37256372996957, 40.39798447055443], &quot;category&quot;: &quot;经济型&quot;, &quot;name&quot;: &quot;北京荷塘山庄&quot;, &quot;count&quot;: &quot;2">
+<meta name="twitter:title" content="python下进行hsv颜色空间量化">
+<meta name="twitter:description" content="由于工作需要，需要计算颜色直方图来提取颜色特征，但若不将颜色空间进行量化，则直方图矢量维数过高，不便于使用。但是看了opencv API后并未发现提供了相关函数能够在计算颜色直方图的同时进行量化，因此这部分功能只能自己实现。下面分为两个部分进行介绍：">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20180428195709157?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzOTI2NTc1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://maself.top/2018/利用python将json数据转换为csv格式/"/>
+  <link rel="canonical" href="http://maself.top/py-hsv-quantilize/"/>
 
 
 
 
 
-  <title>利用python将json数据转换为csv格式 | 马思夫的博客</title>
+  <title>python下进行hsv颜色空间量化 | 马思夫的博客</title>
   
 
 
@@ -331,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://maself.top/2018/利用python将json数据转换为csv格式/">
+    <link itemprop="mainEntityOfPage" href="http://maself.top/py-hsv-quantilize/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="mamq">
@@ -348,7 +350,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">利用python将json数据转换为csv格式</h2>
+          <h2 class="post-title" itemprop="name headline">python下进行hsv颜色空间量化</h2>
         
 
         <div class="post-meta">
@@ -360,8 +362,8 @@
               
                 <span class="post-meta-item-text">发布于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-01T20:05:54+08:00">
-                2018-05-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-30T13:41:49+08:00">
+                2018-04-30
               </time>
             
 
@@ -390,6 +392,17 @@
 
                 
                 
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/图像处理/" itemprop="url" rel="index">
+                    <span itemprop="name">图像处理</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -401,8 +414,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/利用python将json数据转换为csv格式/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/利用python将json数据转换为csv格式/" itemprop="commentCount"></span>
+                <a href="/py-hsv-quantilize/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/py-hsv-quantilize/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -410,7 +423,7 @@
 
           
           
-             <span id="/2018/利用python将json数据转换为csv格式/" class="leancloud_visitors" data-flag-title="利用python将json数据转换为csv格式">
+             <span id="/py-hsv-quantilize/" class="leancloud_visitors" data-flag-title="python下进行hsv颜色空间量化">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -440,7 +453,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  767
+                  654
                 </span>
               
 
@@ -456,7 +469,7 @@
                   <span class="post-meta-item-text">阅读时间 &asymp;</span>
                 
                 <span title="阅读时间">
-                  4
+                  3
                 </span>
               
             </div>
@@ -477,23 +490,10 @@
       
 
       
-        <p>假设.json文件中存储的数据为：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">"type"</span>: <span class="string">"Point"</span>, <span class="string">"link"</span>: <span class="string">"http://www.dianping.com/newhotel/22416995"</span>, <span class="string">"coordinates"</span>: [<span class="number">116.37256372996957</span>, <span class="number">40.39798447055443</span>], <span class="string">"category"</span>: <span class="string">"经济型"</span>, <span class="string">"name"</span>: <span class="string">"北京荷塘山庄"</span>, <span class="string">"count"</span>: <span class="string">"278"</span>, <span class="string">"address"</span>: <span class="string">"北京市怀柔区黄花城村安四路"</span>, <span class="string">"price"</span>: <span class="string">"380"</span>&#125;</span><br><span class="line">&#123;<span class="string">"type"</span>: <span class="string">"Point"</span>, <span class="string">"link"</span>: <span class="string">"http://www.dianping.com/newhotel/19717653"</span>, <span class="string">"coordinates"</span>: [<span class="number">116.56881588256466</span>, <span class="number">40.43310967948417</span>], <span class="string">"category"</span>: <span class="string">"经济型"</span>, <span class="string">"name"</span>: <span class="string">"慕田峪长城鱼师傅乡村酒店"</span>, <span class="string">"count"</span>: <span class="string">"89"</span>, <span class="string">"address"</span>: <span class="string">"北京市怀柔区渤海镇苇店村(慕田峪长城下3公里处，近怀黄路)"</span>, <span class="string">"price"</span>: <span class="string">"258"</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>现在需要将上面的这些数据存为csv格式，其中字典的keys为csv中的属性名称，字典的values为csv中属性对应的值。<br><a id="more"></a></p>
-<hr>
-<p>如果只需要按照json的keys来生成csv，那么操作比较简单，直接按照下面的方法即可：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*-coding:utf-8-*-</span></span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> codecs</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">trans</span><span class="params">(path)</span>:</span></span><br><span class="line">    jsonData = codecs.open(path+<span class="string">'.json'</span>, <span class="string">'r'</span>, <span class="string">'utf-8'</span>)</span><br><span class="line">    <span class="comment"># csvfile = open(path+'.csv', 'w') # 此处这样写会导致写出来的文件会有空行</span></span><br><span class="line">    <span class="comment"># csvfile = open(path+'.csv', 'wb') # python2下</span></span><br><span class="line">    csvfile = open(path+<span class="string">'.csv'</span>, <span class="string">'w'</span>, newline=<span class="string">''</span>) <span class="comment"># python3下</span></span><br><span class="line">    writer = csv.writer(csvfile, delimiter=<span class="string">'\t'</span>, quoting=csv.QUOTE_ALL)</span><br><span class="line">    flag = <span class="keyword">True</span></span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> jsonData:</span><br><span class="line">        dic = json.loads(line[<span class="number">0</span>:<span class="number">-1</span>])</span><br><span class="line">        <span class="keyword">if</span> flag:</span><br><span class="line">            <span class="comment"># 获取属性列表</span></span><br><span class="line">            keys = list(dic.keys())</span><br><span class="line">            <span class="keyword">print</span> (keys)</span><br><span class="line">            writer.writerow(keys) <span class="comment"># 将属性列表写入csv中</span></span><br><span class="line">            flag = <span class="keyword">False</span></span><br><span class="line">        <span class="comment"># 读取json数据的每一行，将values数据一次一行的写入csv中</span></span><br><span class="line">        writer.writerow(list(dic.values()))</span><br><span class="line">    jsonData.close()</span><br><span class="line">    csvfile.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    path=str(sys.argv[<span class="number">1</span>]) <span class="comment"># 获取path参数</span></span><br><span class="line">    <span class="keyword">print</span> (path)</span><br><span class="line">    trans(path)</span><br></pre></td></tr></table></figure>
-<p>在python3下运行，命令行输入</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python C:\Users\MaMQ\Documents\jsonToCsv.py C:\Users\MaMQ\Documents\data\geoFood</span><br></pre></td></tr></table></figure>
-<p>其中第三个参数为需要转换的文件的路径和其名称，将其后缀删除。运行文件后即可得到转换后的csv文件。</p>
-<hr>
-<p>如果需要对json文件中每个字典的key字段进行修改，比如需要将上面dict中的coordinate中的经纬度数据取出来存为x、y数据，则可以按照下面的方法（此方法还可以调整每个属性显示的顺序，效果更好一点）：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> codecs</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">trans</span><span class="params">(path)</span>:</span></span><br><span class="line">    jsonData = codecs.open(path+<span class="string">'.json'</span>, <span class="string">'r'</span>, <span class="string">'utf-8'</span>)</span><br><span class="line">    <span class="comment"># csvfile = open(path+'.csv', 'w') # 此处这样写会导致写出来的文件会有空行</span></span><br><span class="line">    <span class="comment"># csvfile = open(path+'.csv', 'wb') # python2下</span></span><br><span class="line">    csvfile = open(path+<span class="string">'.csv'</span>, <span class="string">'w'</span>, newline=<span class="string">''</span>) <span class="comment"># python3下</span></span><br><span class="line">    writer = csv.writer(csvfile, delimiter=<span class="string">'\t'</span>, quoting=csv.QUOTE_ALL)</span><br><span class="line">    keys=[<span class="string">'id'</span>, <span class="string">'name'</span>, <span class="string">'category'</span>, <span class="string">'price'</span>, <span class="string">'count'</span>, <span class="string">'type'</span>, <span class="string">'address'</span>, <span class="string">'link'</span>, <span class="string">'x'</span>, <span class="string">'y'</span>]</span><br><span class="line">    writer.writerow(keys)</span><br><span class="line">    i = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> dic <span class="keyword">in</span> jsonData:</span><br><span class="line">        dic = json.loads(dic[<span class="number">0</span>:<span class="number">-1</span>])</span><br><span class="line">        x = dic[<span class="string">'coordinates'</span>][<span class="number">0</span>]</span><br><span class="line">        y = dic[<span class="string">'coordinates'</span>][<span class="number">1</span>]</span><br><span class="line">        writer.writerow([str(i),dic[<span class="string">'name'</span>],dic[<span class="string">'category'</span>],dic[<span class="string">'price'</span>],dic[<span class="string">'count'</span>],dic[<span class="string">'type'</span>],dic[<span class="string">'address'</span>],dic[<span class="string">'link'</span>],x,y])</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">    jsonData.close()</span><br><span class="line">    csvfile.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    path = str(sys.argv[<span class="number">1</span>])</span><br><span class="line">    <span class="keyword">print</span> (path)</span><br><span class="line">    trans(path)</span><br></pre></td></tr></table></figure>
-<p>运行方法同上。<br>json文件是我在大众点评抓取的数据，存储格式为utf-8。建议使用codecs包来读取json数据，可指定编码方式。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jsonData = codecs.open(path + <span class="string">'.json'</span>, <span class="string">'r'</span>, encoding=<span class="string">'utf-8'</span>)</span><br></pre></td></tr></table></figure>
-<p>欢迎交流讨论。</p>
-<hr>
-<p>参考资料：<br><a href="http://blog.csdn.net/huitailang1991/article/details/54946528" target="_blank" rel="noopener">csv.writer写入文件有多余的空行</a></p>
+        <p>由于工作需要，需要计算颜色直方图来提取颜色特征，但若不将颜色空间进行量化，则直方图矢量维数过高，不便于使用。但是看了<strong>opencv API</strong>后并未发现提供了相关函数能够在计算颜色直方图的同时进行量化，因此这部分功能只能自己实现。下面分为两个部分进行介绍：<br><a id="more"></a></p>
+<h2 id="一、颜色空间量化表"><a href="#一、颜色空间量化表" class="headerlink" title="一、颜色空间量化表"></a>一、颜色空间量化表</h2><p>由于RGB模型不够直观，不符合人类视觉习惯，因此在进行颜色特征提取前，需要将照片从RGB颜色模型转换为更符合人类视觉的HSV模型。在提取颜色特征时，最常用的方法之一为颜色直方图法，但一张图片中出现的颜色一般特别多，导致直方图矢量的维数较高，因此需要对HSV空间进行量化。根据人眼对颜色的感知特性，采用较为常用的量化方法，即按照如下对应关系进行量化：<br><img src="https://img-blog.csdn.net/20180428195709157?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzOTI2NTc1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="HSV量化对照表"><br>基于上述量化表，将各颜色分量按照下述公式合成为72维一维矢量： $G = 9H + 3S + V$</p>
+<h2 id="二、量化代码"><a href="#二、量化代码" class="headerlink" title="二、量化代码"></a>二、量化代码</h2><p>代码使用纯python写成，效率偏低，处理388*500像素的照片用时1.45秒。在quantilize函数中，未使用if-else判断语句，因此至少节省了1/3的时间。但这个速度显然是无法令人满意的，用C++效率应该会更高点。如果有人有更好的想法，欢迎在下方评论交流。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*-coding:utf-8-*-</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">colors</span><span class="params">(imagepath)</span>:</span></span><br><span class="line">    img = cv2.imread(imagepath)</span><br><span class="line">    hsv = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)</span><br><span class="line">    nhsv = np.zeros(hsv.shape[:<span class="number">2</span>], dtype=np.uint8)</span><br><span class="line">    t2 = datetime.now()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(hsv.shape[<span class="number">0</span>]):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(hsv.shape[<span class="number">1</span>]):</span><br><span class="line">            nhsv[i][j] = quantilize(hsv[i][j])</span><br><span class="line">    <span class="keyword">print</span> datetime.now() - t2</span><br><span class="line">    hist = cv2.calcHist([nhsv], [<span class="number">0</span>], <span class="keyword">None</span>, [<span class="number">72</span>], [<span class="number">0</span>,<span class="number">72</span>]) <span class="comment"># 40x faster than np.histogramfaster than np.histogram</span></span><br><span class="line">    plt.plot(hist,color = <span class="string">'r'</span>)</span><br><span class="line">    plt.xlim([<span class="number">0</span>, <span class="number">72</span>])</span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quantilize</span><span class="params">(value)</span>:</span></span><br><span class="line">    <span class="string">'''hsv直方图量化</span></span><br><span class="line"><span class="string">    value : [21, 144, 23] h, s, v</span></span><br><span class="line"><span class="string">    opencv中，h-[0,180], s-[0,255], v-[0,255]</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment"># </span></span><br><span class="line">    value[<span class="number">0</span>] = value[<span class="number">0</span>] * <span class="number">2</span></span><br><span class="line">    hlist = [<span class="number">20</span>, <span class="number">40</span>, <span class="number">75</span>, <span class="number">155</span>, <span class="number">190</span>, <span class="number">270</span>, <span class="number">290</span>, <span class="number">316</span>, <span class="number">360</span>]</span><br><span class="line">    svlist = [<span class="number">21</span>, <span class="number">178</span>, <span class="number">255</span>]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(hlist)):</span><br><span class="line">        <span class="keyword">if</span> value[<span class="number">0</span>] &lt;= hlist[i]:</span><br><span class="line">            h = i % <span class="number">8</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(svlist)):</span><br><span class="line">        <span class="keyword">if</span> value[<span class="number">1</span>] &lt;= svlist[i]:</span><br><span class="line">            s = i</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(svlist)):</span><br><span class="line">        <span class="keyword">if</span> value[<span class="number">2</span>] &lt;= svlist[i]:</span><br><span class="line">            v = i</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">9</span> * h + <span class="number">3</span> * s + v</span><br></pre></td></tr></table></figure></p>
+<p>以上，欢迎批评交流～<br>如果觉得不错，欢迎点赞～</p>
 
       
     </div>
@@ -526,9 +526,9 @@
           
             <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
           
-            <a href="/tags/json/" rel="tag"><i class="fa fa-tag"></i> json</a>
+            <a href="/tags/hsv量化/" rel="tag"><i class="fa fa-tag"></i> hsv量化</a>
           
-            <a href="/tags/csv/" rel="tag"><i class="fa fa-tag"></i> csv</a>
+            <a href="/tags/颜色空间/" rel="tag"><i class="fa fa-tag"></i> 颜色空间</a>
           
         </div>
       
@@ -541,18 +541,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/python下利用opencv提取surf特征并保存/" rel="next" title="python下利用opencv提取surf特征并保存">
-                <i class="fa fa-chevron-left"></i> python下利用opencv提取surf特征并保存
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/python下进行lda主题挖掘-一-——预处理-英文/" rel="prev" title="python下进行lda主题挖掘(一)——预处理(英文)">
-                python下进行lda主题挖掘(一)——预处理(英文) <i class="fa fa-chevron-right"></i>
+              <a href="/py-opencv-surf/" rel="prev" title="python下利用opencv提取surf特征并保存">
+                python下利用opencv提取surf特征并保存 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -608,8 +604,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -947,6 +952,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、颜色空间量化表"><span class="nav-text">一、颜色空间量化表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、量化代码"><span class="nav-text">二、量化代码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

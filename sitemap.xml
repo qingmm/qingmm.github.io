@@ -2,44 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://maself.top/2018/python%E4%B8%8B%E8%BF%9B%E8%A1%8Clda%E4%B8%BB%E9%A2%98%E6%8C%96%E6%8E%98-%E4%BA%8C-%E2%80%94%E2%80%94%E5%88%A9%E7%94%A8gensim%E8%AE%AD%E7%BB%83LDA%E6%A8%A1%E5%9E%8B/</loc>
+    <loc>http://maself.top/py-json2csv/</loc>
     
-    <lastmod>2018-05-01T12:53:50.951Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/2018/python%E4%B8%8B%E8%BF%9B%E8%A1%8Clda%E4%B8%BB%E9%A2%98%E6%8C%96%E6%8E%98-%E4%B8%89-%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E5%9B%B0%E6%83%91%E5%BA%A6perplexity/</loc>
-    
-    <lastmod>2018-05-01T12:53:18.159Z</lastmod>
+    <lastmod>2018-05-02T08:43:20.545Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://maself.top/2018/python%E4%B8%8B%E8%BF%9B%E8%A1%8Clda%E4%B8%BB%E9%A2%98%E6%8C%96%E6%8E%98-%E4%B8%80-%E2%80%94%E2%80%94%E9%A2%84%E5%A4%84%E7%90%86-%E8%8B%B1%E6%96%87/</loc>
+    <loc>http://maself.top/py-lda-preprocess/</loc>
     
-    <lastmod>2018-05-01T12:52:58.359Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/2018/%E5%88%A9%E7%94%A8python%E5%B0%86json%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2%E4%B8%BAcsv%E6%A0%BC%E5%BC%8F/</loc>
-    
-    <lastmod>2018-05-01T12:50:00.851Z</lastmod>
+    <lastmod>2018-05-02T08:42:44.729Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://maself.top/2018/python%E4%B8%8B%E5%AF%B9hsv%E9%A2%9C%E8%89%B2%E7%A9%BA%E9%97%B4%E8%BF%9B%E8%A1%8C%E9%87%8F%E5%8C%96/</loc>
+    <loc>http://maself.top/py-lda-perplexity/</loc>
     
-    <lastmod>2018-05-01T12:06:40.435Z</lastmod>
+    <lastmod>2018-05-02T08:42:34.193Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://maself.top/2018/python%E4%B8%8B%E5%88%A9%E7%94%A8opencv%E6%8F%90%E5%8F%96surf%E7%89%B9%E5%BE%81%E5%B9%B6%E4%BF%9D%E5%AD%98/</loc>
+    <loc>http://maself.top/py-lda-train/</loc>
     
-    <lastmod>2018-05-01T12:06:39.235Z</lastmod>
+    <lastmod>2018-05-02T08:42:29.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/py-hsv-quantilize/</loc>
+    
+    <lastmod>2018-05-02T08:41:24.265Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/py-opencv-surf/</loc>
+    
+    <lastmod>2018-05-02T08:39:46.165Z</lastmod>
     
   </url>
   
