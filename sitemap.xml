@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://maself.top/py-hsv-quantilize/</loc>
+    <loc>http://maself.top/matplotlib-multifonts-xlabel/</loc>
     
-    <lastmod>2018-05-03T02:22:47.692Z</lastmod>
+    <lastmod>2018-05-07T14:03:52.372Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://maself.top/py-opencv-surf/</loc>
     
-    <lastmod>2018-05-03T02:22:41.324Z</lastmod>
+    <lastmod>2018-05-07T14:01:02.744Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/py-hsv-quantilize/</loc>
+    
+    <lastmod>2018-05-03T02:22:47.692Z</lastmod>
     
   </url>
   
