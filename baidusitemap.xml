@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://maself.top/py-hsv-quantilize/</loc>
-    <lastmod>2018-05-02T14:14:24.637Z</lastmod>
+    <lastmod>2018-05-03T02:22:47.692Z</lastmod>
     <data>
         <display>
         <title>python下进行hsv颜色空间量化</title>
@@ -20,10 +20,37 @@
          
            
              
-              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
+              <breadCrumb title="图像处理" url="http://maself.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
           
              
-              <breadCrumb title="图像处理" url="http://maself.top/categories/python/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+              <breadCrumb title="python" url="http://maself.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://maself.top/py-opencv-surf/</loc>
+    <lastmod>2018-05-03T02:22:41.324Z</lastmod>
+    <data>
+        <display>
+        <title>python下利用opencv提取surf特征并保存</title>
+        <pubTime>2018-04-30T08:06:00.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>surf特征</tag>
+         
+        <tag>特征提取与保存</tag>
+         
+         
+           
+             
+              <breadCrumb title="图像处理" url="http://maself.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+          
+             
+              <breadCrumb title="python" url="http://maself.top/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/python/"/>
           
         </display>
     </data>
@@ -32,54 +59,24 @@
     
   <url>
     <loc>http://maself.top/py-lda-train/</loc>
-    <lastmod>2018-05-02T12:36:39.829Z</lastmod>
+    <lastmod>2018-05-03T02:17:35.352Z</lastmod>
     <data>
         <display>
         <title>python下进行lda主题挖掘(二)——利用gensim训练LDA模型</title>
         <pubTime>2018-05-01T12:10:39.000Z</pubTime>
         
-        <tag>python</tag>
-         
         <tag>lda</tag>
          
         <tag>自然语言处理</tag>
+         
+        <tag>python</tag>
          
         <tag>主题挖掘</tag>
          
          
            
              
-              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
-          
-             
-              <breadCrumb title="NLP" url="http://maself.top/categories/python/NLP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://maself.top/py-lda-preprocess/</loc>
-    <lastmod>2018-05-02T12:36:38.265Z</lastmod>
-    <data>
-        <display>
-        <title>python下进行lda主题挖掘(一)——预处理(英文)</title>
-        <pubTime>2018-05-01T12:08:10.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>lda</tag>
-         
-        <tag>自然语言处理</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
-          
-             
-              <breadCrumb title="NLP" url="http://maself.top/categories/python/NLP/"/>
+              <breadCrumb title="NLP" url="http://maself.top/categories/NLP/"/>
           
         </display>
     </data>
@@ -88,27 +85,48 @@
     
   <url>
     <loc>http://maself.top/py-lda-perplexity/</loc>
-    <lastmod>2018-05-02T12:36:35.361Z</lastmod>
+    <lastmod>2018-05-03T02:17:29.040Z</lastmod>
     <data>
         <display>
         <title>python下进行lda主题挖掘(三)——计算困惑度perplexity</title>
         <pubTime>2018-05-01T12:11:28.000Z</pubTime>
         
-        <tag>python</tag>
-         
         <tag>lda</tag>
          
         <tag>自然语言处理</tag>
          
         <tag>perplexity</tag>
          
+        <tag>python</tag>
+         
          
            
              
-              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
+              <breadCrumb title="NLP" url="http://maself.top/categories/NLP/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://maself.top/py-lda-preprocess/</loc>
+    <lastmod>2018-05-03T02:17:25.060Z</lastmod>
+    <data>
+        <display>
+        <title>python下进行lda主题挖掘(一)——预处理(英文)</title>
+        <pubTime>2018-05-01T12:08:10.000Z</pubTime>
+        
+        <tag>lda</tag>
+         
+        <tag>自然语言处理</tag>
+         
+        <tag>python</tag>
+         
+         
+           
              
-              <breadCrumb title="NLP" url="http://maself.top/categories/python/NLP/"/>
+              <breadCrumb title="NLP" url="http://maself.top/categories/NLP/"/>
           
         </display>
     </data>
@@ -133,33 +151,6 @@
            
              
               <breadCrumb title="python" url="http://maself.top/categories/python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://maself.top/py-opencv-surf/</loc>
-    <lastmod>2018-05-02T08:39:46.165Z</lastmod>
-    <data>
-        <display>
-        <title>python下利用opencv提取surf特征并保存</title>
-        <pubTime>2018-04-30T08:06:00.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>surf特征</tag>
-         
-        <tag>特征提取与保存</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="http://maself.top/categories/python/"/>
-          
-             
-              <breadCrumb title="图像处理" url="http://maself.top/categories/python/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
           
         </display>
     </data>

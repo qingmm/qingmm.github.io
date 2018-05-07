@@ -10,8 +10,6 @@
       
       <categories>
           
-          <category> python </category>
-          
           <category> NLP </category>
           
       </categories>
@@ -19,13 +17,13 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> lda </tag>
             
             <tag> 自然语言处理 </tag>
             
             <tag> perplexity </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -39,8 +37,6 @@
       
       <categories>
           
-          <category> python </category>
-          
           <category> NLP </category>
           
       </categories>
@@ -48,11 +44,11 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> lda </tag>
             
             <tag> 自然语言处理 </tag>
+            
+            <tag> python </tag>
             
             <tag> 主题挖掘 </tag>
             
@@ -68,8 +64,6 @@
       
       <categories>
           
-          <category> python </category>
-          
           <category> NLP </category>
           
       </categories>
@@ -77,11 +71,11 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> lda </tag>
             
             <tag> 自然语言处理 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -120,9 +114,9 @@
       
       <categories>
           
-          <category> python </category>
-          
           <category> 图像处理 </category>
+          
+          <category> python </category>
           
       </categories>
       
@@ -147,9 +141,9 @@
       
       <categories>
           
-          <category> python </category>
-          
           <category> 图像处理 </category>
+          
+          <category> python </category>
           
       </categories>
       
