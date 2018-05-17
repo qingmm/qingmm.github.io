@@ -1900,7 +1900,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b16aff;
+  background: #c6b0d4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3020,4 +3020,13 @@ hr {
 }
 .comments {
   background-color: #fff;
+  margin: 0px;
+}
+.footer-inner {
+  text-align: center;
+}
+.site-uv,
+.site-pv,
+.page-pv {
+  display: inline;
 }
