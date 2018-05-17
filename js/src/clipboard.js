@@ -1,7 +1,7 @@
 function copy()
 {
     var answer = '';
-    for(var i = 1; i < 28; i ++) {
+    for(var i = 1; i <= 28; i ++) {
         id = i.toString();
         value = document.getElementById(id).value;
         answer += id + '.' + value + ', ';
