@@ -4,8 +4,23 @@
 
     
   <url>
+    <loc>http://maself.top/questionaire/</loc>
+    <lastmod>2018-05-17T07:00:11.289Z</lastmod>
+    <data>
+        <display>
+        <title>问卷调查——不同事件对社会稳定度的影响</title>
+        <pubTime>2018-05-17T03:22:25.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://maself.top/matplotlib-multifonts-xlabel/</loc>
-    <lastmod>2018-05-07T14:03:52.372Z</lastmod>
+    <lastmod>2018-05-07T14:05:29.892Z</lastmod>
     <data>
         <display>
         <title>matplotlib设置中英文多种字体混合坐标轴名称</title>
@@ -91,11 +106,11 @@
         <title>python下进行lda主题挖掘(二)——利用gensim训练LDA模型</title>
         <pubTime>2018-05-01T12:10:39.000Z</pubTime>
         
+        <tag>python</tag>
+         
         <tag>lda</tag>
          
         <tag>自然语言处理</tag>
-         
-        <tag>python</tag>
          
         <tag>主题挖掘</tag>
          
@@ -117,13 +132,13 @@
         <title>python下进行lda主题挖掘(三)——计算困惑度perplexity</title>
         <pubTime>2018-05-01T12:11:28.000Z</pubTime>
         
+        <tag>python</tag>
+         
         <tag>lda</tag>
          
         <tag>自然语言处理</tag>
          
         <tag>perplexity</tag>
-         
-        <tag>python</tag>
          
          
            
@@ -143,11 +158,11 @@
         <title>python下进行lda主题挖掘(一)——预处理(英文)</title>
         <pubTime>2018-05-01T12:08:10.000Z</pubTime>
         
+        <tag>python</tag>
+         
         <tag>lda</tag>
          
         <tag>自然语言处理</tag>
-         
-        <tag>python</tag>
          
          
            
