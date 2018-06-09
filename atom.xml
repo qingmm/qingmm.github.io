@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>马思夫的博客</title>
+  <title>moon</title>
   
   <subtitle>我从未长大，但从未停止生长</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maself.top/"/>
-  <updated>2018-05-17T13:36:43.200Z</updated>
+  <updated>2018-06-09T15:29:00.063Z</updated>
   <id>http://maself.top/</id>
   
   <author>
@@ -17,30 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>问卷调查——不同事件对社会稳定度的影响</title>
-    <link href="http://maself.top/questionaire/"/>
-    <id>http://maself.top/questionaire/</id>
-    <published>2018-05-17T03:22:25.000Z</published>
-    <updated>2018-05-17T13:36:43.200Z</updated>
+    <title>由《垫底辣妹》引发的回忆与思考</title>
+    <link href="http://maself.top/cji7k1vl70000ntkgh7pm3koj/"/>
+    <id>http://maself.top/cji7k1vl70000ntkgh7pm3koj/</id>
+    <published>2018-06-09T11:55:12.000Z</published>
+    <updated>2018-06-09T15:29:00.063Z</updated>
     
-    <content type="html"><![CDATA[<p><link rel="stylesheet" href="/css/input.css"></p><script type="text/javascript" src="/js/src/clipboard.js"></script><p><strong>由于本问卷中部分词汇涉及敏感词，无法使用常用的问卷工具，因此采用如此的曲线救国的方法，谢谢各位朋友的支持。</strong><br>本问卷仅作科研用途，不涉及任何隐私信息，希望您能够认真作答。<br>本问卷共设计26个问题，代表从新闻中挖掘出的26类事件。我们需要您根据您的经验判断<strong>每类事件反映社会稳定程度的能力大小</strong>，并为其赋予<em>-10~10</em>之间的值，负值代表不稳定，正值代表稳定。分值可以为小数。</p><blockquote><p>例如：我认为若一个国家的新闻中出现军事冲突事件，则某种程度上说明该国家社会稳定度较低，因此军事冲突事件反应社会稳定的能力为8,因其是负面影响，所以打分为-8。<br>若认为某一事件无法反应社会稳定程度，可将分值打为0左右。</p></blockquote><a id="more"></a><p>如有任何不同意见欢迎在最后的留言区留下建议，非常感谢。</p><p><strong>说明</strong>：</p><ol><li>“治安”事件为涉及到警察、犯罪的事件；</li><li>“核”事件为涉及到核能但与武器无关的事件；</li><li>“核武器”事件为涉及到核武器的事件；</li><li><strong>填写完毕后点击<em>复制答案到剪贴板</em>，然后<em>ctrl + v</em>将答案复制到评论框中，无需填写昵称和邮箱，直接提交即可。</strong></li></ol><h4 id="非常感谢"><a href="#非常感谢" class="headerlink" title="非常感谢!!!"></a>非常感谢!!!</h4><ol><li>“经济活动”事件:<input id="1" placeholder="-10~10"></li><li>“能源”事件:<input id="2" placeholder="-10~10"></li><li>“旅游”事件:<input id="3" placeholder="-10~10"></li><li>“娱乐”事件:<input id="4" placeholder="-10~10"></li><li>“航空”事件:<input id="5" placeholder="-10~10"></li><li>“航天”事件:<input id="6" placeholder="-10~10"></li><li>“法律”事件:<input id="7" placeholder="-10~10"></li><li>“教育”事件:<input id="8" placeholder="-10~10"></li><li>“港口”事件:<input id="9" placeholder="-10~10"></li><li>“政治”事件:<input id="10" placeholder="-10~10"></li><li>“健康”事件:<input id="11" placeholder="-10~10"></li><li>“宗教活动”事件:<input id="12" placeholder="-10~10"></li><li>“核”事件:<input id="13" placeholder="-10~10"></li><li>“拳击运动”事件:<input id="14" placeholder="-10~10"></li><li>“医疗”事件:<input id="15" placeholder="-10~10"></li><li>“宗教冲突”事件:<input id="16" placeholder="-10~10"></li><li>“种族冲突”事件:<input id="17" placeholder="-10~10"></li><li>“军事活动”事件:<input id="18" placeholder="-10~10"></li><li>“军事冲突”事件:<input id="19" placeholder="-10~10"></li><li>“袭击”事件:<input id="20" placeholder="-10~10"></li><li>“恐怖袭击”事件:<input id="21" placeholder="-10~10"></li><li>“恐怖主义”事件:<input id="22" placeholder="-10~10"></li><li>“核武器”事件:<input id="23" placeholder="-10~10"></li><li>“核制裁”事件:<input id="24" placeholder="-10~10"></li><li>“难民”事件:<input id="25" placeholder="-10~10"></li><li>“海盗”事件:<input id="26" placeholder="-10~10"></li><li>“毒品”事件:<input id="27" placeholder="-10~10"></li><li>“治安”事件:<input id="28" placeholder="-10~10"></li></ol><button type="button" onclick="copy()" class="btn btn-primary">复制答案到剪贴板</button>]]></content>
+    <content type="html"><![CDATA[<p>看电影的时候仿佛看到了当年的自己</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">看到这的时候，很是佩服这位母亲，有着孟母三迁式的理念，善于鼓励孩子，在出现问题的时候不是冲动的批评女儿，相反，这位母亲每次总是很冷静，站在女儿的角度思考问题，关心爱护女儿，这一点让我觉得这位母亲非常伟大，令人尊敬。在实际生活中，很多父母在呼吸了三四十年的空气后，往往会有“我吃过的盐比你吃过的饭都多，我走过的桥比你走过的路都多”想法，因此他们往往会忘记自己当年也是一个或单纯无知或活泼叛逆的小孩，在小孩出现问题的时候，不能做到换位思考，往往诉诸于冲动与暴力。</span><br><span class="line">上面这段话是为了表达对沙耶加母亲的尊敬与赞美，以及对我的父母的感恩与赞美，如果没有他们，我也不会是现在的我。</span><br></pre></td></tr></table></figure><p>下面，回到女主身上，这个即将要参加高考的“垫底辣妹”。<br><img src="http://p81hctxgb.bkt.clouddn.com/syj1.png" alt="沙耶加与坪田老师的初见"></p><p>　　　　沙耶加在第一次测试中回答了所有题目，却一道都没对，坪田老师不得不说是因材施教的高手，在鼓励与夸奖沙耶加后，引导其定下考上庆应大学的目标。其实沙耶加在此之前，未曾对未来有过明确的规划，也未曾为自己设定如此明确的目标，未曾努力去学习过，每天就像草原上的骏马，漫无目的的寻欢作乐，类似于浑浑噩噩的状态。在开始补习后，坪田老师的教育方式很有趣，在轻松的氛围中引导沙耶加不断地去主动学习曾经荒废的知识，令人惊讶的是沙耶加是从小学的教材开始复习的。沙耶加与坪田老师打赌说如果她能够在暑假期间学完中学英语的话就给她看老师年轻时的长发照片。之后，沙耶加开启疯狂英语模式，吃饭、K歌、骑车路上的时候都会学习英语。看到这段就像是在看当初的自己，高三时每天晚上只休息五六个小时，尽可能多的挤出时间去复习、刷题，考研的时候每天按时作息，起床被单词，路上被单词，吃饭背单词，睡前背单词，用尽所有的碎片时间去复习，只有拼尽全力后才知道自己的极限在哪里，否则限制自己的不是天花板，而是自己的目标。</p><p>　　　　沙耶加成功的在三周时间内复习通过中学英语，看到了坪田老师在新西兰交换时拍摄的长发飘飘的帅照。初次证明了自己的实力。但对沙耶加来说，这只是个开始，她要面临的困难还要多得多，远远超出当时的我。她的英语阅读理解能力较差，日本史基本等于空白，把日本地图画成了日本国旗的样子，老师提问名古屋三英杰的时候，反问是黄段子吗？并且掰着手指说屁股、屁股、屁股(这段应该是和日语的谐音等有关)。可以说，她离庆应大学还要相当长的一段路要走，需要更多的努力与更大的决心才行。由于长时间的熬夜复习，沙耶加的睡眠时间只能调整为上课时间(恩，貌似我也是…)，被班主任暴力叫醒后，与其打了个赌，若沙耶加考上庆应大学，则班主任绕操场裸奔一圈，否则沙耶加裸奔一圈，很刺激。回家后又受到父亲的嘲讽，沙耶加的动力更足了，这时，为了赢得父亲的关心与尊重、赢得与老师的赌约、报答母亲的无私付出，沙耶加已经全力以赴。但在她觉得已经拼尽全力后，在两次月考中仍然未取得说的过去的成绩，女主濒临绝望，意志趋于消沉，失去了奋斗的动力。此时，家中又发生一些变故，弟弟对父亲的顺从终于到达极限，他退出棒球社，与小混混混在一起，消极的反抗着父亲的意志，家庭中的痛苦也达到顶峰。沙耶加在经过这些变故后，又拾起斗志，在参观庆应大学后，对其文化氛围和环境非常向往。于是重新回到补习班继续努力。<br>　　　　<br>　　　　最终，功夫不负有心人，沙耶加的得偿所愿，成功考入庆应大学，沙耶加与父亲、沙耶加与弟弟、父亲与弟弟之间都互相实现了和解，家庭关系重新趋于和睦。结局比较美好，虽然是常用的电影手法，但整条奋斗轨迹确实是很有代表性的，能够令很多人找到共鸣，不论最终是否考入一志，但期间所付出的心血与全力以赴的充实是相同的，很多人终其一生，可能都不会再有那样的无知无畏、心无旁骛、全力以赴，所以，这也是那段时光如此被铭记被怀念的原因。<br>如今，非常感谢当年的自己能够那般努力，只是有点遗憾那时未曾给多年后的自己留下寄语。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/input.css&quot;&gt;&lt;/p&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/clipboard.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;由于本问卷中部分词汇涉及敏感词，无法使用常用的问卷工具，因此采用如此的曲线救国的方法，谢谢各位朋友的支持。&lt;/strong&gt;&lt;br&gt;本问卷仅作科研用途，不涉及任何隐私信息，希望您能够认真作答。&lt;br&gt;本问卷共设计26个问题，代表从新闻中挖掘出的26类事件。我们需要您根据您的经验判断&lt;strong&gt;每类事件反映社会稳定程度的能力大小&lt;/strong&gt;，并为其赋予&lt;em&gt;-10~10&lt;/em&gt;之间的值，负值代表不稳定，正值代表稳定。分值可以为小数。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;例如：我认为若一个国家的新闻中出现军事冲突事件，则某种程度上说明该国家社会稳定度较低，因此军事冲突事件反应社会稳定的能力为8,因其是负面影响，所以打分为-8。&lt;br&gt;若认为某一事件无法反应社会稳定程度，可将分值打为0左右。&lt;/p&gt;
-&lt;/blockquote&gt;
+      
+      
+        &lt;p&gt;看电影的时候仿佛看到了当年的自己&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;
+      
     
     </summary>
     
-      <category term="python" scheme="http://maself.top/categories/python/"/>
+      <category term="随笔" scheme="http://maself.top/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="问卷调查" scheme="http://maself.top/tags/%E9%97%AE%E5%8D%B7%E8%B0%83%E6%9F%A5/"/>
+      <category term="电影" scheme="http://maself.top/tags/%E7%94%B5%E5%BD%B1/"/>
     
   </entry>
   
