@@ -2,114 +2,121 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://maself.top/questionaire/</loc>
+    
+    <lastmod>2019-04-17T13:53:58.649Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://maself.top/birigirl/</loc>
     
-    <lastmod>2018-06-09T15:42:30.386Z</lastmod>
+    <lastmod>2019-04-17T12:50:58.612Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://maself.top/matplotlib-multifonts-xlabel/</loc>
     
-    <lastmod>2018-05-07T14:05:29.892Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/py-opencv-surf/</loc>
-    
-    <lastmod>2018-05-07T14:01:02.744Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/py-hsv-quantilize/</loc>
-    
-    <lastmod>2018-05-03T02:22:47.692Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/py-lda-train/</loc>
-    
-    <lastmod>2018-05-03T02:17:35.352Z</lastmod>
+    <lastmod>2019-04-17T12:50:58.604Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://maself.top/py-lda-perplexity/</loc>
     
-    <lastmod>2018-05-03T02:17:29.040Z</lastmod>
+    <lastmod>2019-04-17T12:50:58.598Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/py-lda-train/</loc>
+    
+    <lastmod>2019-04-17T12:50:58.596Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://maself.top/py-lda-preprocess/</loc>
     
-    <lastmod>2018-05-03T02:17:25.060Z</lastmod>
+    <lastmod>2019-04-17T12:50:58.595Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://maself.top/py-json2csv/</loc>
     
-    <lastmod>2018-05-02T08:43:20.545Z</lastmod>
+    <lastmod>2019-04-17T12:50:58.586Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://maself.top/archives/index.html</loc>
+    <loc>http://maself.top/py-hsv-quantilize/</loc>
     
-    <lastmod>2018-05-01T11:33:33.055Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/categories/%E9%9A%8F%E7%AC%94/index.html</loc>
-    
-    <lastmod>2018-05-01T10:03:46.439Z</lastmod>
+    <lastmod>2019-04-17T12:50:58.581Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://maself.top/categories/python/index.html</loc>
+    <loc>http://maself.top/py-opencv-surf/</loc>
     
-    <lastmod>2018-05-01T10:03:41.603Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/categories/index.html</loc>
-    
-    <lastmod>2018-05-01T10:02:57.627Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/tags/index.html</loc>
-    
-    <lastmod>2018-05-01T09:58:49.131Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/about/index.html</loc>
-    
-    <lastmod>2018-04-30T15:00:24.840Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://maself.top/404/index.html</loc>
-    
-    <lastmod>2018-04-30T07:02:18.513Z</lastmod>
+    <lastmod>2019-04-17T12:50:58.568Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://maself.top/404.html</loc>
     
-    <lastmod>2018-04-30T05:54:27.221Z</lastmod>
+    <lastmod>2019-04-17T12:50:58.523Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/archives/index.html</loc>
+    
+    <lastmod>2019-04-17T12:50:58.516Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/tags/index.html</loc>
+    
+    <lastmod>2019-04-17T12:50:58.506Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/categories/%E9%9A%8F%E7%AC%94/index.html</loc>
+    
+    <lastmod>2019-04-17T12:50:58.478Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/categories/python/index.html</loc>
+    
+    <lastmod>2019-04-17T12:50:58.475Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/categories/index.html</loc>
+    
+    <lastmod>2019-04-17T12:50:58.449Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/about/index.html</loc>
+    
+    <lastmod>2019-04-17T12:50:58.439Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://maself.top/404/index.html</loc>
+    
+    <lastmod>2019-04-17T12:50:58.350Z</lastmod>
     
   </url>
   
