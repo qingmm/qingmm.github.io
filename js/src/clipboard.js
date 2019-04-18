@@ -29,6 +29,6 @@ function upload()
     // alert("您的答案为：" + answer);
     input = document.getElementById('veditor');
     input.value = answer;
-    document.getElementsByClassName('vsubmit')[0].click();
-    document.getElementsByClassName('vsubmit')[0].click();
+    btn = document.getElementsByClassName('vsubmit')[0];
+    btn.click();
 }
