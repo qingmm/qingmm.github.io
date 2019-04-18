@@ -26,8 +26,8 @@ function upload()
         value = document.getElementById(id).value;
         answer += id + '.' + value + ', ';
     }
-    alert(answer);
+    // alert("您的答案为：" + answer);
     input = document.getElementById('veditor');
-    input.value = "测试";
+    input.value = answer;
     document.getElementsByClassName('vsubmit')[0].click();
 }
