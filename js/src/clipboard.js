@@ -30,4 +30,5 @@ function upload()
     input = document.getElementById('veditor');
     input.value = answer;
     document.getElementsByClassName('vsubmit')[0].click();
+    document.getElementsByClassName('vsubmit')[0].click();
 }
